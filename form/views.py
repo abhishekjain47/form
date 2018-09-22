@@ -12,5 +12,4 @@ def get_name(request):
             return HttpResponseRedirect('/thanks/')
         else:
             form = NameForm()
-
-    return render(request, 'name.html', {'form': form})
+            return render(request, 'name.html', {'form': form})
